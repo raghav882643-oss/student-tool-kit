@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Toolkit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎓 Student Toolkit</h1>
+        <p>Simple tools for smarter studying</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>🧮 Calculator</h2>
+
+            <input type="number" id="num1" placeholder="First number">
+            <input type="number" id="num2" placeholder="Second number">
+
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">−</button>
+            <button onclick="calculate('*')">×</button>
+            <button onclick="calculate('/')">÷</button>
+
+            <h3 id="result">Result: —</h3>
+        </section>
+
+
+        <section class="card">
+            <h2>⏱️ Study Timer</h2>
+
+            <div id="timer">25:00</div>
+
+            <button onclick="startTimer()">Start</button>
+            <button onclick="resetTimer()">Reset</button>
+        </section>
+
+
+        <section class="card">
+            <h2>📝 Quick Notes</h2>
+
+            <textarea id="notes" placeholder="Write your notes here..."></textarea>
+
+            <button onclick="saveNotes()">Save Notes</button>
+
+            <p id="saved">Not saved yet</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made with ❤️ using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
