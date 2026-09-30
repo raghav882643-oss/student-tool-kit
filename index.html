@@ -1,21 +1,23 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study spark</title>
+    <title>StudySpark</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>🎓 Study spark</h1>
+        <h1>🎓 StudySpark</h1>
         <p>Simple tools for smarter studying</p>
     </header>
 
     <main>
 
+        <!-- Calculator -->
         <section class="card">
             <h2>🧮 Calculator</h2>
 
@@ -31,6 +33,7 @@
         </section>
 
 
+        <!-- Study Timer -->
         <section class="card">
             <h2>⏱️ Study Timer</h2>
 
@@ -41,6 +44,7 @@
         </section>
 
 
+        <!-- Quick Notes -->
         <section class="card">
             <h2>📝 Quick Notes</h2>
 
@@ -51,13 +55,52 @@
             <p id="saved">Not saved yet</p>
         </section>
 
+
+        <!-- Exam Countdown -->
+        <section class="card">
+            <h2>⏳ Exam Countdown</h2>
+
+            <input type="text" id="examName" placeholder="Exam name">
+
+            <label for="examDate">Select exam date:</label>
+            <input type="datetime-local" id="examDate">
+
+            <button onclick="startCountdown()">Start Countdown</button>
+
+            <h3 id="countdownTitle">Your countdown will appear here</h3>
+
+            <div id="countdown">
+                <div>
+                    <span id="days">0</span>
+                    <small>Days</small>
+                </div>
+
+                <div>
+                    <span id="hours">0</span>
+                    <small>Hours</small>
+                </div>
+
+                <div>
+                    <span id="minutes">0</span>
+                    <small>Minutes</small>
+                </div>
+
+                <div>
+                    <span id="seconds">0</span>
+                    <small>Seconds</small>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>Made by Raghav by using html and css❤️ assistant-jai malik vansh sharma</p>
+        <p>Made by Raghav</p>
     </footer>
 
     <script src="script.js"></script>
 
 </body>
 </html>
+```
+
